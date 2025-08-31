@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Tetteh — Portfolio | Software Developer & Designer</title>
+  <meta name="description" content="Portfolio of Daniel Tetteh — Software developer and graphic/UI designer. Selected work in web, apps, and brand design. Available for full-time and contract roles." />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Daniel Tetteh — Software Developer & Designer" />
+  <meta property="og:description" content="Selected work in web, apps, and brand design. Available for full-time and contract roles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="image/sd.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="image/sd.jpg" />
+
+  <!-- Fonts & Icons (kept both as in your original) -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SomeHash" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slide.css" />
+  <link rel="stylesheet" href="css/style-switcher.css" />
+
+  <!-- NProgress (CSS only) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Prevent theme FOUC: set theme ASAP -->
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('mode') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        const savedColor = localStorage.getItem('selectedColor');
+        if (savedColor) {
+          const colors = {
+            'color-1':'#FF6B6B','color-2':'#6BCB77','color-3':'#4D96FF','color-4':'#FFD93D','color-5':'#845EC2'
+          };
+          const c = colors[savedColor] || '#4D96FF';
+          document.documentElement.style.setProperty('--color-primary', c);
+          document.documentElement.style.setProperty('--color-accent', c);
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <!-- Schema.org (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Daniel Tetteh",
+    "jobTitle":"Software Developer & Designer",
+    "image":"image/sd.jpg",
+    "url":"https://example.com/",
+    "sameAs":[]
+  }
+  </script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="aside" aria-label="Sidebar">
+    <div class="profile">
+      <img src="image/sd.jpg" alt="Portrait of Daniel Tetteh" class="profile-img" />
+      <h2>Daniel</h2>
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content">
+    <!-- Home -->
+    <section id="home" class="section home-section" aria-labelledby="home-title">
+      <div class="home-content">
+        <h1 id="home-title">Hello, I’m <span class="name">Daniel Tetteh</span></h1>
+        <h2 class="typing" aria-live="polite"></h2>
+        <div class="home-cta">
+          <a class="btn btn-primary" href="#portfolio">View Work</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        I’m a software developer and multidisciplinary designer focused on building
+        fast, accessible, and delightful digital experiences. I blend modern engineering
+        with brand-level design to ship products that feel premium.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services-section" aria-labelledby="services-title">
+      <h2 id="services-title">Services</h2>
+      <div class="services-list">
+        <div class="service-card">
+          <i class="fas fa-paint-brush service-icon" aria-hidden="true"></i>
+          <h3>Brand & Graphic Design</h3>
+          <p>Premium visual identity systems, marketing assets, and product visuals.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-code service-icon" aria-hidden="true"></i>
+          <h3>Web Development</h3>
+          <p>High-performance, responsive, and accessible websites & web apps.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-mobile-alt service-icon" aria-hidden="true"></i>
+          <h3>UI/UX Design</h3>
+          <p>Product thinking, wireframes, prototypes, and polished interfaces.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-camera-retro service-icon" aria-hidden="true"></i>
+          <h3>Photography</h3>
+          <p>Brand photography, product shoots, and editorial retouching.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-video service-icon" aria-hidden="true"></i>
+          <h3>Videography</h3>
+          <p>Launch videos, promos, and motion pieces for campaigns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">Selected Work</h2>
+
+      <div class="portfolio-filters" role="tablist" aria-label="Portfolio filters">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="website" role="tab">Website</button>
+        <button class="filter-btn" data-filter="mobile-app" role="tab">Mobile App</button>
+        <button class="filter-btn" data-filter="graphic-design" role="tab">Graphic Design</button>
+        <button class="filter-btn" data-filter="photography" role="tab">Photography</button>
+        <button class="filter-btn" data-filter="videography" role="tab">Videography</button>
+      </div>
+
+      <div class="portfolio-gallery">
+        <!-- Graphic Design: GraceField -->
+        <article class="portfolio-item" data-category="graphic-design">
+          <div class="slider" aria-label="GraceField Project gallery">
+            <div class="slides">
+              <img src="image/signpost.jpg" alt="GraceField signage concept" loading="lazy">
+              <img src="image/calender.jpg" alt="GraceField calendar layout" loading="lazy">
+              <img src="image/3-copy.jpg" alt="GraceField brand poster" loading="lazy">
+              <img src="image/gracefiekd-pres.jpg" alt="GraceField brand deck slide" loading="lazy">
+              <img src="image/gracefield.jpg" alt="GraceField branding mockup" loading="lazy">
+            </div>
+          </div>
+          <a href="#" class="project-link"><h3>GraceField Branding</h3></a>
+        </article>
+
+        <!-- Graphic Design: KAN -->
+        <article class="portfolio-item" data-category="graphic-design">
+          <div class="slider" aria-label="KAN Project gallery">
+            <div class="slides">
+              <img src="image/kan-new-copy.jpg" alt="KAN poster" loading="lazy">
+              <img src="image/PSD_3-copy.jpg" alt="KAN design set" loading="lazy">
+              <img src="image/office.jpg" alt="KAN identity mockup" loading="lazy">
+            </div>
+          </div>
+          <a href="#" class="project-link"><h3>KAN Identity</h3></a>
+        </article>
+
+        <!-- Graphic Design: Liberty Credit -->
+        <article class="portfolio-item" data-category="graphic-design">
+          <div class="slider" aria-label="Liberty Credit gallery">
+            <div class="slides">
+              <img src="image/liberty-pres.jpg" alt="Liberty Credit presentation slide" loading="lazy">
+              <img src="image/bottle.jpg" alt="Liberty product mock" loading="lazy">
+              <img src="image/Sign.jpg" alt="Liberty signage" loading="lazy">
+              <img src="image/tag.jpg" alt="Liberty product tag" loading="lazy">
+              <img src="image/4.jpg" alt="Collateral" loading="lazy">
+              <img src="image/kc.jpg" alt="Liberty KC asset" loading="lazy">
+            </div>
+          </div>
+          <a href="#" class="project-link"><h3>Liberty Credit</h3></a>
+        </article>
+
+        <!-- Websites -->
+        <article class="portfolio-item1" data-category="website">
+          <img src="image/LoveWorld2.jpg" alt="LoveWorld Teens & Youth Website 2" loading="lazy" />
+          <a href="http://Loveworldteensandyouthministry.com" target="_blank" rel="noopener"><h3>LoveWorld Teens & Youth — v2</h3></a>
+        </article>
+
+        <article class="portfolio-item1" data-category="website">
+          <img src="image/LoveWorld.jpg" alt="LoveWorld Teens & Youth Website 1" loading="lazy" />
+          <a href="http://Loveworldteensandyouthministry.org" target="_blank" rel="noopener"><h3>LoveWorld Teens & Youth — v1</h3></a>
+        </article>
+
+        <!-- Mobile Apps -->
+        <article class="portfolio-item1" data-category="mobile-app">
+          <img src="image/App.jpg" alt="Reign mobile app" loading="lazy" />
+          <a href="http://Ireign.app" target="_blank" rel="noopener"><h3>Reign App</h3></a>
+        </article>
+
+        <!-- Photography -->
+         <article class="portfolio-item" data-category="photography">
+          <div class="slider" aria-label="Photography gallery">
+            <div class="slides">
+              <img src="image/SD!.jpg" alt="Liberty Credit presentation slide" loading="lazy">
+              <img src="image/BR!.jpg" alt="Liberty product mock" loading="lazy">
+              <img src="image/BR.jpg" alt="Liberty signage" loading="lazy">
+              <img src="image/SG.jpg" alt="Liberty product tag" loading="lazy">
+              <img src="image/food.jpeg" alt="Collateral" loading="lazy">
+              <img src="image/food!.jpeg" alt="Liberty KC asset" loading="lazy">
+            </div>
+          </div>
+          <a href="#" class="project-link"><h3>Photography</h3></a>
+        </article>
+
+        <!-- Videography -->
+        <article class="portfolio-item" data-category="videography">
+          <div class="slider" aria-label="Videography gallery">
+            <div class="slides">
+              <img src="image/cam.jpg" alt="Liberty Credit presentation slide" loading="lazy">
+              <img src="image/cam1.jpg" alt="Liberty product mock" loading="lazy">
+              <img src="image/cam2.jpg" alt="Liberty signage" loading="lazy">
+            </div>
+          </div>
+          <a href="#" class="project-link"><h3>Videography</h3></a>
+        </article>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Me</h2>
+
+      <form id="contact-form" aria-describedby="form-status">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="from_name" required placeholder="Your name" autocomplete="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="reply_to" required placeholder="name@example.com" autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project…"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" aria-live="polite">
+          <span class="btn-text">Send</span>
+          <span class="btn-loading" style="display:none;">
+            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending…
+          </span>
+        </button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Style Switcher -->
+  <div class="style-switcher closed" aria-label="Style switcher">
+    <button class="switcher-toggle" aria-label="Open style switcher">
+      <i class="fas fa-cog fa-spin"></i>
+    </button>
+    <div class="switcher-panel">
+      <h3>Theme Colors</h3>
+      <div class="colors">
+        <button class="color-btn" data-color="color-1" style="background:#FF6B6B" aria-label="Coral"></button>
+        <button class="color-btn" data-color="color-2" style="background:#6BCB77" aria-label="Emerald"></button>
+        <button class="color-btn" data-color="color-3" style="background:#4D96FF" aria-label="Azure"></button>
+        <button class="color-btn" data-color="color-4" style="background:#FFD93D" aria-label="Sun"></button>
+        <button class="color-btn" data-color="color-5" style="background:#845EC2" aria-label="Violet"></button>
+      </div>
+      <hr />
+      <div class="mode-toggle">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="mode-toggle" aria-label="Dark mode toggle" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+    <span class="close" id="lightboxClose" role="button" tabindex="0" aria-label="Close">&times;</span>
+    <span class="arrow left" id="prev" role="button" tabindex="0" aria-label="Previous">&#10094;</span>
+    <img src="" alt="Expanded portfolio image" id="lightboxImg">
+    <span class="arrow right" id="next" role="button" tabindex="0" aria-label="Next">&#10095;</span>
+  </div>
+
+  <!-- Vendor scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- App scripts (all kept; added portfolio.js + optional image-dimensions.js) -->
+  <script src="js/style-switcher.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/slide.js" defer></script>
+  <script src="js/type.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+  <!-- Optional: auto-fill width/height for <img> after load -->
+  <script src="js/image-dimensions.js" defer></script>
+</body>
+</html>
